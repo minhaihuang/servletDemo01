@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.test01.TestServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+  	<servlet-name>HttpServletTestServlet</servlet-name>
+  	<servlet-class>minhaihuang.servletTest.test01.HttpServletTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HttpServletTestServlet</servlet-name>
+  	<url-pattern>/httpServletTestServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>HttpServletResponseTestServlet</servlet-name>
+  	<servlet-class>minhaihuang.servletTest.test01.HttpServletResponseTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HttpServletRequestTestServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.test01.HttpServletRequestTestServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>HttpServletResponseTestServlet</servlet-name>
+  	<url-pattern>/HttpServletResponseTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HttpServletRequestTestServlet</servlet-name>
+    <url-pattern>/HttpServletRequestTestServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>PathTestServlet</servlet-name>
+  	<servlet-class>minhaihuang.servletTest.test01.PathTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LifeTestServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.test01.LifeTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ServletContextTestServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.test01.ServletContextTestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>status01Servlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.test02.status01Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>status02Servlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.test02.status02Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ResponseTypeServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.test02.ResponseTypeServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>PathTestServlet</servlet-name>
+  	<url-pattern>*.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LifeTestServlet</servlet-name>
+    <url-pattern>/LifeTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletContextTestServlet</servlet-name>
+    <url-pattern>/ServletContextTestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>status01Servlet</servlet-name>
+    <url-pattern>/status01</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>status02Servlet</servlet-name>
+    <url-pattern>/status02</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ResponseTypeServlet</servlet-name>
+    <url-pattern>/ResponseType</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>version</param-name>
+  <param-value>1.0</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>TestLuanMaServlet</servlet-name>
+  	<servlet-class>minhaihuang.servletTest.test02.TestLuanMaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetClientIPServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.homeWork.GetClientIPServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>TestLuanMaServlet</servlet-name>
+  	<url-pattern>/TestLuanMa</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetClientIPServlet</servlet-name>
+    <url-pattern>/GetClientIP</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>KindOfPathTestServlet</servlet-name>
+  	<servlet-class>minhaihuang.servletTest.homeWork.KindOfPathTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>KindOfPathTestServlet</servlet-name>
+  	<url-pattern>/aa/bb/cc</url-pattern>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>StatusNumberServlet02</servlet-name>
+  	<servlet-class>minhaihuang.servletTest.homeWork.StatusNumberServlet02</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StatusNumberServlet02</servlet-name>
+  	<url-pattern>/StatusNumber02</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>StatusNumberServlet03</servlet-name>
+  	<servlet-class>minhaihuang.servletTest.homeWork.StatusNumberServlet03</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowPhotoServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.homeWork.ShowPhotoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.homeWork.AServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.homeWork.BServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowPhotoMainServlet</servlet-name>
+    <servlet-class>minhaihuang.servletTest.homeWork.ShowPhotoMainServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+  	<servlet-name>StatusNumberServlet03</servlet-name>
+  	<url-pattern>/StatusNumber03</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowPhotoServlet</servlet-name>
+    <url-pattern>/ShowPhoto</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AServlet</servlet-name>
+    <url-pattern>/AServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BServlet</servlet-name>
+    <url-pattern>/BServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowPhotoMainServlet</servlet-name>
+    <url-pattern>/ShowPhotoMain</url-pattern>
+  </servlet-mapping>
+</web-app>
